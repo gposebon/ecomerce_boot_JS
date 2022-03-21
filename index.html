@@ -26,7 +26,7 @@
     
     <!-- Bootstrap Icon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-
+    
 </head>
 <body>
   <header>
@@ -52,7 +52,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                     
                         <a class="nav-link" href="./html/shop.html">
                           <i class="bi bi-cart"> Shop</i>
                         </a>
@@ -85,155 +84,56 @@
       </nav>
   </header>
     <main>
-        <section>
-            <div class="container mt-2">
-                <div class="card mb-3" >
-                    <div class="row g-0 align-items-center p-2">
-                      <div class="col-md-4">
-                        <img src="./img/imagen1.jpg" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h3 class="card-title pl-3 tituloCards">Bienvenido</h3>
-                          <p class="card-text pl-3 parrafosTexto">Bienvenidos al sitio de compra PAZ productos de nuestra tierra, 
-                            aqui usted podra encontrar variedades de productos naturales, cultivados y cuidados para que lleguen frescos 
-                            a su mesa </p>
-                          <p class="card-text pl-3 parrafosTexto">En Paz sabemos lo que significa comer sano, rico y natural por eso ponemos todo nuestro
-                            empeño para que lo que producimos sea de calidad, esta a un paso de mejorar su alimentacion solo debe registrarse 
-                            y comenzar a comprar.
-                          </p>
-                          <h5 class="textFooterCards"> Gracias por elegirnos</h5>
-                        </div>
-                      </div>
+      <section>
+        <div class="container mt-2">
+            <div>
+              <h4>Buscar</h4>
+              <input type="text" id="filtro-producto">
+              <button id="botonBuscar" onclick="busquedaDeProductos()">Buscar por Producto</button>
+              
+              <input type="number" id="filtro-precio">
+              <button id="botonBuscar" onclick="filtroPorPrecio()">Buscar por Precio</button>
+            </div>
+
+            <div class="card mb-3" >
+                <div class="row g-0 align-items-center p-2">
+                  <div class="col-md-4">
+                    <img src="./img/imagen1.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title pl-3 tituloCards">Bienvenido</h3>
+                      <p class="card-text pl-3 parrafosTexto">Bienvenidos al sitio de compra PAZ productos de nuestra tierra, 
+                        aqui usted podra encontrar variedades de productos naturales, cultivados y cuidados para que lleguen frescos 
+                        a su mesa </p>
+                      <p class="card-text pl-3 parrafosTexto">En Paz sabemos lo que significa comer sano, rico y natural por eso ponemos todo nuestro
+                        empeño para que lo que producimos sea de calidad, esta a un paso de mejorar su alimentacion solo debe registrarse 
+                        y comenzar a comprar.
+                      </p>
+                      <h5 class="textFooterCards"> Gracias por elegirnos</h5>
                     </div>
                   </div>
-            </div>
-        </section>
-        <section>
-          <div class="container mt-3 mb-3">
-            <div class="row">
-              <div class=" 
-                        tituloProductos"
-                        >
-                        OFERTAS IMPERDIBLES
+                </div>
               </div>
-            </div>
+        </div>
+    </section>
+    <section>
+      <div class="container mt-3 mb-3">
+        <div class="row">
+          <div class=" 
+                    tituloProductos"
+                    >
+                    OFERTAS IMPERDIBLES
           </div>
-          <div class="container">  
-            <div class="row 
-                        p-3
-                        align-items-start"
-                        >
-              <div class="col">
-                  <div class="card mx-auto" style="width: 18rem;">
-                      <div class="mb-3 subtituloProductos">
-                        Lechuga
-                      </div>
-                      <img src="./img/lechuga.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <div class="p-2 border-top border-bottom">
-                          <label for="numeroPrecio"><h6>Precio: </h6></label>
-                          <label class="precio" for="numeroPrecio">78 </label> Pesos. 
-                        </div>  
-                        <div class="linkCompra border-top">
-                          <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                        </div>
-                      </div>
-                    </div>    
-              </div>
-              <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="mb-3 subtituloProductos">
-                        Morron
-                    </div>
-                    <img src="./img/morron.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <div class="p-2 border-top border-bottom">
-                        <label for="numeroPrecio"><h6>Precio: </h6></label>
-                        <label class="precio" for="numeroPrecio">115 </label> Pesos. 
-                      </div>  
-                      <div class="linkCompra border-top">
-                        <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                      </div>
-                    </div>
-                  </div>    
-              </div>
-              <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="mb-3 subtituloProductos">
-                        Tomate
-                    </div>
-                    <img src="./img/tomate.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <div class="p-2 border-top border-bottom">
-                        <label for="numeroPrecio"><h6>Precio: </h6></label>
-                        <label class="precio" for="numeroPrecio">210 </label> Pesos. 
-                      </div>  
-                      <div class="linkCompra border-top">
-                        <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                      </div>
-                    </div>
-                  </div>    
-              </div>
-            </div>
-            <div class="row 
-                        p-3 
-                        align-items-start"
-                        >
-              <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="mb-3 subtituloProductos">
-                        Puerro
-                    </div>
-                    <img src="./img/puerro.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <div class="p-2 border-top border-bottom">
-                        <label for="numeroPrecio"><h6>Precio: </h6></label>
-                        <label class="precio" for="numeroPrecio">89 </label> Pesos. 
-                      </div>  
-                      <div class="linkCompra border-top">
-                        <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                      </div>
-                    </div>
-                  </div>    
-              </div>
-              <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="mb-3 subtituloProductos">
-                        Papa
-                    </div>
-                    <img src="./img/papa.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <div class="p-2 border-top border-bottom">
-                        <label for="numeroPrecio"><h6>Precio: </h6></label>
-                        <label class="precio" for="numeroPrecio">80 </label> Pesos. 
-                      </div>  
-                      <div class="linkCompra border-top">
-                        <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                      </div>
-                    </div>
-                  </div>    
-              </div>
-              <div class="col">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <div class="mb-3 subtituloProductos">
-                        Calabaza
-                    </div>
-                    <img src="./img/calabaza.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <div class="p-2 border-top border-bottom">
-                        <label for="numeroPrecio"><h6>Precio: </h6></label>
-                        <label class="precio" for="numeroPrecio">70 </label> Pesos. 
-                      </div>  
-                      <div class="linkCompra border-top">
-                        <a class="nav-link" href="./html/shop.html">Ir a compras</a>
-                      </div>
-                    </div>
-                  </div>    
-              </div>
-            </div>              
-          </div>
-        </section>
+        </div>
+      </div>
+      <div class="container">  
+        <div id="cardsAMostrar" class="row 
+                    p-3
+                    align-items-start"
+                    >   
+      </div>
+    </section>
     </main>
     <footer>
         <div class="container text-center navFooter">
@@ -255,3 +155,6 @@
     </footer>
 </body>
 </html>
+
+<!--Javascript-->
+<script src="./js/index.js"></script>
