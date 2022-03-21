@@ -1,0 +1,113 @@
+.rowHeader {
+  height: 200px;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  background-image: url("../img/back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.tituloPagina, .subtituloPagina {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  color: white;
+  font-weight: 200; }
+
+.subtituloPagina {
+  align-items: flex-start;
+  font-size: 2em; }
+
+.loginPosition {
+  height: 100%;
+  align-items: flex-start;
+  padding: 5px; }
+
+.nav-item:hover {
+  border-bottom: solid 1px black; }
+
+i {
+  color: black; }
+
+.navFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #e9ac3c;
+  margin-top: 10px;
+  height: 100px; }
+  .navFooter a {
+    color: black; }
+  .navFooter li {
+    margin: 2%; }
+
+.tituloFooter {
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.contenedorIconsFooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tituloProductos, .subtituloProductos {
+  background-color: lightgray;
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  font-size: 2em;
+  border-top: 2px solid black; }
+
+.subtituloProductos {
+  background-color: inherit;
+  font-weight: bold;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
+  font-size: 1em; }
+
+.tituloCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: underline; }
+
+.textFooterCards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Cormorant Garamond', serif; }
+
+.parrafosTexto {
+  font-family: 'PT Sans', sans-serif; }
+
+.precio {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px; }
+
+.linkCompra {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.inputKilos {
+  width: 20%; }
+
+.carousel-item {
+  max-height: 321px; }
