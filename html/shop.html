@@ -85,7 +85,7 @@
                         <span class="badge bg-secondary" id="contador-carrito">0</span>
                       </a>
                     
-                  </li>
+                    </li>
                   </ul>
             </div>
         </div>
@@ -94,6 +94,15 @@
     <main>
         <section>
             <div class="container mt-2">
+              <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand">Busqueda:</a>
+                <div style="display: flex;">
+                  <input class="form-control mr-sm-2" type="search" id="filtro-producto" placeholder="Ingrese un producto" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" onclick="busquedaDeProductos()">Buscar</button>
+                  <input class="form-control mr-sm-2" type="search" id="filtro-precio" placeholder="Ingrese un precio" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" onclick="filtroPorPrecio()">Buscar</button>
+                </form>
+              </nav>
               <div class="row">
                 <div class="tituloProductos"
                           >

@@ -6,6 +6,7 @@ let totalCompra = 0
 
 const productos = [
     {
+        id: 1,
         nombre: "Lechuga",
         precio: 80,
         comentarioImagen: "Lechuga",
@@ -13,6 +14,7 @@ const productos = [
         stock: 3
     },
     {
+        id: 2,
         nombre: "Morron",
         precio: 150,
         comentarioImagen: "Morron",
@@ -20,6 +22,7 @@ const productos = [
         stock: 3
     },
     {
+        id: 3,
         nombre: "Acelga",
         precio: 100,
         comentarioImagen: "Acelga",
@@ -27,6 +30,7 @@ const productos = [
         stock: 3
     },
     {
+        id: 4,
         nombre: "Papa",
         precio: 120,
         comentarioImagen: "Papa",
@@ -34,6 +38,7 @@ const productos = [
         stock: 3
     },
     {
+        id: 5,
         nombre: "Cebolla",
         precio: 70,
         comentarioImagen: "Cebolla",
@@ -41,6 +46,7 @@ const productos = [
         stock: 3
     },
     {
+        id: 6,
         nombre: "Calabaza",
         precio: 200,
         comentarioImagen: "Calabaza",
