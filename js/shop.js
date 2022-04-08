@@ -87,11 +87,10 @@ const generaCards = (productos) => {
 
 const comprobarStock = (stock, cantidad) => {
     if(stock < cantidad) {
-        return false
-    } else {
+        return false 
+    }else {
         return true
     }
-
 }
 
 const restaStock = (stock, cantidad) => {
@@ -118,6 +117,7 @@ const compra = (productoID) => {
         productoElegido.stock = restaStock(productoElegido.stock, cantidad)
         document.getElementById("contador-carrito").innerHTML = carrito.length
         localStorage.setItem('carrito', JSON.stringify(carrito))
+        muestraModal()
     } else {
         console.log("No queda mas de este producto")
     }
@@ -149,3 +149,11 @@ const filtroPorPrecio = () => {
     generaCards(filtro)
 }
 
+const muestraModal = () => {
+    swal({
+        title: "Agrego al carrito",
+        text: "Usted se ha agregado su producto al carrito",
+        icon: "success",
+        button: "Continuar",
+    })   
+}

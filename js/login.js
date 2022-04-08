@@ -5,7 +5,7 @@ const validarUsuario = () => {
         const nombreUsuario = JSON.parse(localStorage.getItem('usuario'))
         return nombreUsuario
     }else {
-         return "Login"
+        return "Login"
     }
 }
 
@@ -66,11 +66,15 @@ const compruebaLogin = () => {
     
 
     usuarios.forEach(usuario => {
-        if(logueo.nombre == usuario.nombre && logueo.password == usuario.password) {
-            console.log(logueo)
-        }else {
-            document.getElementById("error-login").innerHTML = `<h3>Datos Incorrectos</h3>`
-        }
+        logueo.nombre == usuario.nombre && logueo.password == usuario.password 
+        ? swal({
+            title: "Login correcto",
+            text: "Usted se ha logueado",
+            icon: "success",
+            button: "Continuar",
+        })
+        :document.getElementById("error-login").innerHTML = `<h3>Datos Incorrectos</h3>`
+        
     })
     
     localStorage.setItem('usuario', JSON.stringify(logueo.nombre))

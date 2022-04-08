@@ -4,7 +4,7 @@ const validarUsuario = () => {
         const nombreUsuario = JSON.parse(localStorage.getItem('usuario'))
         return nombreUsuario
     }else {
-         return "Login"
+        return "Login"
     }
 }
 
