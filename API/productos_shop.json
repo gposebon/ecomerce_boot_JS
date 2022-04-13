@@ -1,0 +1,46 @@
+{
+    "productos": [
+        {
+            "nombre": "Lechuga",
+            "precio": 100,
+            "comentarioImagen": "Lechuga",
+            "imagen": "../img/lechuga.jpg",
+            "stock": 3
+        },
+        {
+            "nombre": "Morron",
+            "precio": 100,
+            "comentarioImagen": "Morron",
+            "imagen": "../img/morron.jpg",
+            "stock": 3
+        },
+        {
+            "nombre": "Acelga",
+            "precio": 100,
+            "comentarioImagen": "Acelga",
+            "imagen": "../img/acelga.jpg",
+            "stock": 3
+        },
+        {
+            "nombre": "Papa",
+            "precio": 100,
+            "comentarioImagen": "Papa",
+            "imagen": "../img/papa.jpg",
+            "stock": 3
+        },
+        {
+            "nombre": "Cebolla",
+            "precio": 100,
+            "comentarioImagen": "Cebolla",
+            "imagen": "../img/cebolla.jpg",
+            "stock": 3
+        },
+        {
+            "nombre": "Calabaza",
+            "precio": 100,
+            "comentarioImagen": "Calabaza",
+            "imagen": "../img/calabaza.jpg",
+            "stock": 3
+        }
+    ]
+}

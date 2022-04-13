@@ -12,21 +12,11 @@ const validarUsuario = () => {
 let nombre = validarUsuario()
 document.getElementById("usuario").innerHTML = " " + nombre
 
-const usuarios = [
-    {
-        nombre: "pepito",
-        password: 1234
-    },
-    {
-        nombre: "roberto",
-        password: 1234
-    },
-    {
-        nombre: "alfredo",
-        password: 1234
-    }
-]
+const usuarios = fetch("../../ecomerce_boot_JS/API/productos.json")
+    .then( (response) => response.json())
+    .then( (data) => data.usuarios)
 
+    
 
 const renderLogin = 
 `<div class="row d-flex justify-content-center align-items-center h-100">
@@ -56,6 +46,7 @@ const renderLogin =
     </div>
 </div>
 `
+
 document.getElementById("login").innerHTML = renderLogin
 
 const compruebaLogin = () => {
