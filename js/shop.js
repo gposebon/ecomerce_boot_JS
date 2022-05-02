@@ -4,13 +4,16 @@ let carrito = []
 let cantidad = 0
 let totalCompra = 0
 
-const productos = fetch("../../ecomerce_boot_JS/API/productos_shop.json")
+let productos = []
+
+fetch("../API/productos_shop.json")
     .then( (response) => response.json())
     .then( (data) => generaCards(data.productos))
 
-const generaCards = (productos) => {
+const generaCards = (productosAMostrar) => {
+    productos = productosAMostrar
     let cardsAMostrar = ``
-    productos.forEach(producto => {
+    productosAMostrar.forEach(producto => {
         cardsAMostrar += `
         <div class="col">
             <div class="card mx-auto" style="width: 18rem;">
@@ -58,6 +61,7 @@ const calculeTotalPrecio = (cantidad, precio) => {
 let productosEnCarrito = JSON.parse(localStorage.getItem('carrito'))
 
 const compra = (productoID) => {
+    
     const productoElegido = productos.find(producto => productoID == producto.id)
 
     cantidad = document.getElementById(productoID).value
@@ -72,7 +76,12 @@ const compra = (productoID) => {
         localStorage.setItem('carrito', JSON.stringify(carrito))
         muestraModal()
     } else {
-        console.log("No queda mas de este producto")
+        swal({
+            title: "Sin stock",
+            text: "No queda mas de este producto",
+            icon: "warning",
+            button: "Continuar",
+        })   
     }
 }
 
@@ -80,7 +89,7 @@ const mostrarCards = (cards) => {
     document.getElementById("cardsAMostrar").innerHTML = cards
 }
 
-generaCards(productos)
+
 
 const busquedaDeProductos = () => {
     const busquedaRealizada = document.getElementById("filtro-producto").value.toUpperCase().trim()

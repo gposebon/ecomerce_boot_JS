@@ -1,9 +1,5 @@
 'use strict'
 
-const productos = fetch("../../ecomerce_boot_JS/API/productos.json")
-    .then( (response) => response.json())
-    .then( (data) => generaCards(data.productos))
-
 const generaCards = (productos) => {
     let cardsAMostrar = ``
     productos.forEach(producto => {
@@ -34,5 +30,8 @@ const mostrarCards = (cards) => {
     document.getElementById("cardsAMostrar").innerHTML = cards
 }
 
-generaCards(productos)
+fetch("../API/productos.json")
+    .then( (response) => response.json())
+    .then( (data) => generaCards(data.productos))
+
 

@@ -1,6 +1,7 @@
 {
     "productos": [
         {
+            "id":1,
             "nombre": "Lechuga",
             "precio": 100,
             "comentarioImagen": "Lechuga",
@@ -8,6 +9,7 @@
             "stock": 3
         },
         {
+            "id":2,
             "nombre": "Morron",
             "precio": 100,
             "comentarioImagen": "Morron",
@@ -15,6 +17,7 @@
             "stock": 3
         },
         {
+            "id":3,
             "nombre": "Acelga",
             "precio": 100,
             "comentarioImagen": "Acelga",
@@ -22,6 +25,7 @@
             "stock": 3
         },
         {
+            "id":4,
             "nombre": "Papa",
             "precio": 100,
             "comentarioImagen": "Papa",
@@ -29,6 +33,7 @@
             "stock": 3
         },
         {
+            "id":5,
             "nombre": "Cebolla",
             "precio": 100,
             "comentarioImagen": "Cebolla",
@@ -36,6 +41,7 @@
             "stock": 3
         },
         {
+            "id":6,
             "nombre": "Calabaza",
             "precio": 100,
             "comentarioImagen": "Calabaza",

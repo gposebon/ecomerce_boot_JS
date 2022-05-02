@@ -9,14 +9,15 @@ const validarUsuario = () => {
     }
 }
 
+let usuarios = []
+
 let nombre = validarUsuario()
+
 document.getElementById("usuario").innerHTML = " " + nombre
 
-const usuarios = fetch("../../ecomerce_boot_JS/API/productos.json")
+fetch("../API/productos.json")
     .then( (response) => response.json())
-    .then( (data) => data.usuarios)
-
-    
+    .then( (data) => compruebaLogin(data.usuarios))
 
 const renderLogin = 
 `<div class="row d-flex justify-content-center align-items-center h-100">
@@ -50,7 +51,7 @@ const renderLogin =
 document.getElementById("login").innerHTML = renderLogin
 
 const compruebaLogin = () => {
-
+    
     let nombreUsuario = document.getElementById("nombre").value
 
     const logueo = usuarios.find( usuario => nombreUsuario == usuario.nombre)
